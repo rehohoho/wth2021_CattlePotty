@@ -16,12 +16,12 @@
 #include <BLEUtils.h>
 #include <BLE2902.h>
  
-#define bleServerName "<Copy the name you give to your server>"
+#define bleServerName "serverEsp"
  
 //UUID's of the service, characteristic that we want to read and characteristic that we want to write.
-static BLEUUID MyPushButtonServiceUUID("<Copy the generated an UUID for Service>");
-static BLEUUID button_1_CharacteristicUUID("<Copy the generated an UUID for PB1 Characteristic>");
-static BLEUUID button_2_CharacteristicUUID("<Copy the generated an UUID for PB2 Characteristic>");
+static BLEUUID MyPushButtonServiceUUID("a20c412d-f325-416d-bdc1-da4fdcbb5b4c");
+static BLEUUID button_1_CharacteristicUUID("9df66b03-ae85-4f4b-b249-451cc4d60ad0");
+static BLEUUID button_2_CharacteristicUUID("a727f699-f683-4611-a27d-9d3c9894aebd");
  
 //Flags stating if should begin connecting and if the connection is up
 static boolean doConnect = false;
